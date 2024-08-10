@@ -1,6 +1,6 @@
-FROM amazoncorrectto:8-alpine3.17-jre
+FROM openjdk:8-jre-alpine
 
-EXPOSE 8181
+EXPOSE 8080
 
 COPY ./target/java-maven-app-*.jar /usr/app/
 WORKDIR /usr/app
